@@ -5,21 +5,21 @@
 class Awry < Formula
   desc "Terminal-based AWS profile manager with a TUI"
   homepage "https://github.com/Art-Thor/awry"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Art-Thor/awry/releases/download/v0.4.0/awry_0.4.0_darwin_amd64.tar.gz"
-      sha256 "16bc3844e94aab3fc44c876c52c2007b14936fcfc5e85707e3bd7f986fc00357"
+      url "https://github.com/Art-Thor/awry/releases/download/v0.4.1/awry_0.4.1_darwin_amd64.tar.gz"
+      sha256 "670299cacc1db15a9039f2b57efed76d26bbe5d7955fbff022832186361a5683"
 
       define_method(:install) do
         bin.install "awry"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Art-Thor/awry/releases/download/v0.4.0/awry_0.4.0_darwin_arm64.tar.gz"
-      sha256 "0b7eb9dba02e01633628e43d136b2662ae8c9dd8719020cdaad04b15a4e2080b"
+      url "https://github.com/Art-Thor/awry/releases/download/v0.4.1/awry_0.4.1_darwin_arm64.tar.gz"
+      sha256 "94fabc7ef0945ffffe867cb0d2bf14aa64a0334857e520f0eea74e38b5de0fc8"
 
       define_method(:install) do
         bin.install "awry"
@@ -29,15 +29,15 @@ class Awry < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Art-Thor/awry/releases/download/v0.4.0/awry_0.4.0_linux_amd64.tar.gz"
-      sha256 "4849920db99ac62001f4164d5372a4274840659586e3f035534b42aff9d3c97d"
+      url "https://github.com/Art-Thor/awry/releases/download/v0.4.1/awry_0.4.1_linux_amd64.tar.gz"
+      sha256 "3b42a98553f7c0f6495f8b4d76b8132a67987c5947a15e2ee3ebaaa3719f5621"
       define_method(:install) do
         bin.install "awry"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Art-Thor/awry/releases/download/v0.4.0/awry_0.4.0_linux_arm64.tar.gz"
-      sha256 "22c734ceaecdacc60b7396e16c288cf94bb46a991ee4cd195ebced314564f5c3"
+      url "https://github.com/Art-Thor/awry/releases/download/v0.4.1/awry_0.4.1_linux_arm64.tar.gz"
+      sha256 "038945fecb21071df2ff2a2d4aa32e4469f1906261910e4846de608a584751f3"
       define_method(:install) do
         bin.install "awry"
       end
